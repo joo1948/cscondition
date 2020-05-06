@@ -10,8 +10,9 @@ namespace cscondition
     {
         static void Main(string[] args)
         {
-            Console.Write("숫자 입력 : ");
-            int input = int.Parse(Console.ReadLine());
+
+            //Console.Write("숫자 입력 : ");
+            //int input = int.Parse(Console.ReadLine());
             /*
             if(input % 2 == 0)
             {
@@ -34,11 +35,11 @@ namespace cscondition
                 
             }
             */
-            Console.WriteLine(input % 2 ==0 ? "짝수입니다." : "홀수입니다");
-            Console.WriteLine(input > 0 ? "자연수입니다" : "자연수가 아닙니다");
-            
+            //Console.WriteLine(input % 2 ==0 ? "짝수입니다." : "홀수입니다");
+            //Console.WriteLine(input > 0 ? "자연수입니다" : "자연수가 아닙니다");
+
             //현재시간 구하기
-            Console.WriteLine(DateTime.Now.Year);
+            /*Console.WriteLine(DateTime.Now.Year);
             Console.WriteLine(DateTime.Now.Month);
             Console.WriteLine(DateTime.Now.Day);
             Console.WriteLine(DateTime.Now.Hour);
@@ -122,20 +123,40 @@ namespace cscondition
                     break;
                 default:
                     switch (info.KeyChar)
-                    {
-                       /* case (char)38:
-                            Console.WriteLine("위로 이동");
-                            break;*/
-                        case '가':
-                            Console.WriteLine("가 입력");
-                            break;
-                        default:
-                            Console.WriteLine("다른키를 눌렀습니다.");
-                            break;
+                    {*/
+            /* case (char)38:
+                 Console.WriteLine("위로 이동");
+                 break;*/
+            /*case '가':
+                Console.WriteLine("가 입력");
+                break;
+            default:
+                Console.WriteLine("다른키를 눌렀습니다.");
+                break;
 
-                    }
-                    break;
-            }//가급적 이 방식 써야해 주영아 알겠G~?
+        }
+        break;
+}//가급적 이 방식 써야해 주영아 알겠G~?
+*/
+
+            int  x,y;
+            Console.WriteLine("--숫자를 입력해--");
+            Console.Write("x: ");
+            x = int.Parse(Console.ReadLine());//입력
+            Console.Write("y: ");
+            y = int.Parse(Console.ReadLine());//입력
+
+            if (x > 4)
+            {
+                if (y > 2)
+                {
+                    Console.WriteLine(x * y);
+                }
+            }
+            else
+            {
+                Console.WriteLine();
+            }
         }
     }
 }
